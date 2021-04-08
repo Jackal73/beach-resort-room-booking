@@ -270,7 +270,7 @@ h6 {
     width: 100%;
   }
 }
-/*end of services */
+/* end of services */
 /* featured rooms */
 
 .featured-rooms {
@@ -359,8 +359,8 @@ h6 {
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
 }
-/* end of room  */
-/* single room*/
+/* end of room */
+/* single room */
 
 .single-room {
   padding: 5rem 0 0 0;
@@ -435,7 +435,7 @@ h6 {
   }
 }
 /* end of single room*/
-/* roomlist */
+/* roomslist */
 .roomslist {
   padding: 5rem 0;
 }
@@ -511,4 +511,4 @@ h6 {
     max-width: 1170px;
   }
 }
-/* end of rooms fitler*/
+/* end of rooms filter*/
