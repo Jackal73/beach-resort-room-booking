@@ -21,10 +21,13 @@ export default function RoomFilter({ rooms }) {
     breakfast,
     pets,
   } = context;
+
   // Get unique types
   let types = getUnique(rooms, "type");
+
   // Add all
   types = ["all", ...types];
+
   // Map to jsx
   types = types.map((item, index) => {
     return (
@@ -46,7 +49,7 @@ export default function RoomFilter({ rooms }) {
     <section className="filter-container">
       <Title title="search rooms" />
       <form className="filter-form">
-        {/*{select type}*/}
+        {/*{Select Type}*/}
         <div className="form-group">
           <label htmlFor="type">room type</label>
           <select
@@ -59,8 +62,9 @@ export default function RoomFilter({ rooms }) {
             {types}
           </select>
         </div>
-        {/*{end select type}*/}
-        {/*{guests}*/}
+        {/*{End Select Type}*/}
+
+        {/*{Guests}*/}
         <div className="form-group">
           <label htmlFor="capacity">guests</label>
           <select
@@ -73,7 +77,23 @@ export default function RoomFilter({ rooms }) {
             {people}
           </select>
         </div>
-        {/*{end guests}*/}
+        {/*{End Guests}*/}
+
+        {/*{Room Price}*/}
+        <div className="form-group">
+          <label htmlFor="price">room price ${price}</label>
+          <input
+            type="range"
+            name="price"
+            min={minPrice}
+            max={maxPrice}
+            id="price"
+            value={price}
+            onChange={handleChange}
+            className="form-control"
+          />
+        </div>
+        {/*{End Room Price}*/}
       </form>
     </section>
   );
